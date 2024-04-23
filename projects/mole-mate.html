@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mole Mate | Corey Johnsen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../resources/styles/styles.css">
+    <link rel="stylesheet" href="../resources/styles/project-styles.css">
+</head>
+<body>
+    <div class="project-banner">
+        <h1>Mole Mate</h1>
+        <a href="https://github.com/NoelHa28/Final-app.git" class="github-btn">View on GitHub</a>
+    </div>
+    <div class="project-content">
+        <p class="project-text">
+            Mole Mate is a site created by Corey Johnsen and Noëlla Hilgen that uses machine learning to allow users to predict whether their moles are malignant or benign with a high degree of accuracy. 
+            It was created for a class called <i>AI Lifecycle</i> that focuses on teach the entire cycle of an AI product from a concept all the way to deployment of the product.
+        </p>
+        <img src="../resources/images/projects/mole_mate/mole_mate.png" alt="Mole Mate Main Screen" class="project-image">
+        <h2 class="project-subheading">Model Details</h2>
+        <p class="project-text">
+            The dataset for this project was obtained from <a href="https://www.kaggle.com/datasets/fanconic/skin-cancer-malignant-vs-benign">Kaggle</a> and consists of a large collection of images of moles
+            along with labels indicating whether they are malignant or benign. We then applied preprocessing steps to the images in the form of resizing, contrast shifting, brightness shifting, and normalization.
+            This data was then used to train and evalute an EfficientNetB3 model which eventually achieved 91% accuracy.
+        </p>
+        <h2 class="project-subheading">Application Details</h2>
+        <p class="project-text">
+            The application was built using the Flask framework in Python. The application supports the frontend site, as well as an endpoint to interface with the trained model to predict the result of an uploaded image.
+            This application was packaged using Docker, and then deployed via AWS using ECR and ECS. Unfortunately, due to costs associated with serving the application, it is not currently deployed. However, the code and some
+            screenshots of the site are still available on the <a href="https://github.com/NoelHa28/Final-app.git">GitHub page</a>.
+        </p>
+    </div>
+</body>
+</html>
+
