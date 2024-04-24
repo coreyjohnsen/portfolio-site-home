@@ -315,3 +315,27 @@ h2 {
         transform: translateX(-50%) translateY(-10px);
     }
 }
+
+@media (max-width: 600px) {
+
+    .about-content {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .about-text, .profile-image {
+        width: 100%;
+    }
+
+    .about-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-description {
+        font-size: 1.1rem;
+    }
+
+    .view-projects {
+        display: none;
+    }
+}
